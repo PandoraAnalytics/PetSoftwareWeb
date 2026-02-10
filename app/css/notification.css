@@ -1,0 +1,93 @@
+﻿
+
+.noti_wrp {
+    position: relative;
+    margin: 20px 0;
+}
+
+    .noti_wrp i {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .noti_wrp .badge {
+        position: absolute;
+        top: -10px;
+        left: 12px;
+        background: #d64651;
+    }
+
+.noti_msg_popup {
+    position: fixed;
+    box-shadow: none;
+    max-width: 300px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #eee;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    color: #000;
+    display: none;
+    padding: 10px;
+    border: 1px solid #c6c8cb;
+}
+
+    .noti_msg_popup span.notify_close {
+        position: absolute;
+        right: 15px;
+        font-size: 15px;
+    }
+
+#notificationtable tr td {
+    font-size: 13px !important;
+    padding: 8px !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+#cbp-spnotification-s2 {
+    width: 500px;
+    background: #eee;
+}
+
+.cbp-spmenu-notifictation {
+    right: -500px;
+}
+
+    .cbp-spmenu-notifictation.cbp-spmenu-open {
+        right: 0px;
+    }
+
+    .cbp-spmenu-notifictation a {
+        font-size: 13px !important;
+        padding: 0 !important;
+    }
+
+.notification_dropdown {
+    display: inline !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+    font-weight: 100 !important;
+    padding-top: 20px !important;
+    font-size: 17px !important;
+}
+
+.notification_action_menu {
+    z-index: 1030;
+    top: 18px;
+    right: 10px;
+    left: auto;
+    text-align: right;
+    width: auto;
+    min-width: auto;
+}
+
+    .notification_action_menu > li > a {
+        padding: 3px 10px !important;
+    }
+
+.unread_mark {
+    font-size: 9px;
+    color: #d64651;
+}

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            font-family: arial;
+            font-size: 15px;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            vertical-align: top;
+        }
+
+            table tr td {
+                border: solid 1px grey;
+                padding: 3px;
+                vertical-align: top;
+                line-height: 20px;
+            }
+
+        .innertable tr td {
+            border: none;
+            vertical-align: top;
+        }
+
+        .strong {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 23px;
+        }      
+
+        .persondiv {
+            margin-bottom: 10px;
+        }
+
+        .secondtext {
+            color: #a7a7a7;
+        }
+
+        .break {
+            page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td width="60%" align="left" valign="bottom" style="border: none; vertical-align: middle;">
+                <h1>Ticket# #ticketno</h1>
+            </td>
+            <td width="40%" align="right" style="border: none;">&nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <table width="100%" valign="top">
+        <tr>
+            <td width="25%" class="strong" valign="top">Ticket No:</td>
+            <td width="75%"><strong>#ticketno</strong></td>
+        </tr>
+        <tr>
+            <td width="25%">Created :</td>
+            <td width="75%">#author / #createddate</td>
+        </tr>
+        <tr>
+            <td width="25%">Updated :</td>
+            <td width="75%">#updatedbyauthor / #updateddate</td>
+        </tr>
+        <tr>
+            <td width="25%">Application :</td>
+            <td width="75%">#appname</td>
+        </tr>
+        <tr>
+            <td width="25%">Header :</td>
+            <td width="75%">#header</td>
+
+        </tr>
+        <tr>
+            <td width="25%">Description :</td>
+            <td width="75%">#description</td>
+
+        </tr>
+        <tr>
+            <td width="25%">EDT (Hours) :</td>
+            <td width="75%">#etd</td>
+
+        </tr>
+        <tr>
+            <td width="25%">Priority :</td>
+            <td width="75%">#priority</td>
+
+        </tr>
+        <tr>
+            <td width="25%">Current Status :</td>
+            <td width="75%">#statusname</td>
+
+        </tr>
+
+    </table>
+    <table width="100%" valign="top">
+        <tr>
+            <td width="100%" colspan="3"><strong>Comments</strong></td>
+        </tr>
+        ###comments###
+    </table>
+    <div style="text-align: center; margin-top: 10px;">
+        generated via pets.software
+    </div>
+</body>
+</html>

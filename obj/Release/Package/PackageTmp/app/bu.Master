@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="bu.Master.cs" Inherits="Breederapp.bu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/website/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/blogo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+        .form_input {
+            width: 65%;
+        }
+
+        .rightmenu .dropdown-toggle::after {
+            display: none !important;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+        }
+
+        /* =======================  tab structue ======================= */
+
+        .nav-pills {
+            background: #2e3a48;
+        }
+
+            .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+                /*color: var(--bs-nav-pills-link-active-color) !important;*/
+                /*background-color: var(--bs-nav-pills-link-active-bg);*/
+                background-color: #f28c0e;
+            }
+
+            .nav-pills .nav-link {
+                border-radius: 0 !important;
+            }
+
+        .nav-link:focus, .nav-link:hover {
+            color: #ffffff !important;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .badge {
+            position: absolute;
+            right: -15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #777;
+            border-radius: 10px;
+            position: absolute;
+            top: -13px;
+            background: #d64651;
+            min-width: 10px;
+            padding: 3px 7px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="my_form" runat="server">
+        <div>
+            <header>
+                <div id="header-content">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-6">
+                            <span class="d-lg-none d-md-none d-sm-none" id="menu-toggle">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            <ul class="leftmenu">            
+                                <li>
+                                    <a href="initialization.aspx?switch">
+                                        <img src="https://pandoraict.com/images/logo.png" id="companyLogo" runat="server" alt="Company Logo" style="max-height: 50px;" />
+                                    </a></li>
+                                <%-- <li><a href="landing.aspx">
+                                    <img src="https://pandoraict.com/images/logo.png" alt="Client LOGO" style="max-height: 35px;" />
+                                </a></li>--%>
+                                <li><a href="budashboard.aspx">
+                                    <asp:Label ID="Label1" Text="<%$Resources:Resource, Dashboard%> " runat="server"></asp:Label></a> </li>
+
+                                <li><a href="customerlist.aspx">
+                                    <asp:Label ID="Label4" Text="Customer" runat="server"></asp:Label></a></li>
+
+                                <li><a href="productlist.aspx">
+                                    <asp:Label ID="Label2" Text="Product" runat="server"></asp:Label></a> </li>
+
+                                <li><a href="serviceslist.aspx">
+                                    <asp:Label ID="Label25" Text="Services" runat="server"></asp:Label></a></li>
+
+                                <li><a href="combolist.aspx">
+                                    <asp:Label ID="Label8" Text="Combo List" runat="server"></asp:Label></a></li>
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" id="ordermanagementmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <asp:Label ID="Label26" Text="Order Management" runat="server"></asp:Label>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="ordermanagementmenu">
+                                        <li>
+                                            <a href="bucurrentorder.aspx">
+                                                <asp:Label ID="Label27" Text="Current Orders" runat="server"></asp:Label></a></li>
+                                        <li><a href="bupastorder.aspx">
+                                            <asp:Label ID="Label28" Text="Past Orders" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="buposcurrentorder.aspx">
+                                                <asp:Label ID="Label21" Text="POS Current Orders" runat="server"></asp:Label></a></li>
+                                        <li><a href="bupospastorder.aspx">
+                                            <asp:Label ID="Label22" Text="POS Past Orders" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" id="reportmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <asp:Label ID="Label9" Text="Reports" runat="server"></asp:Label>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="reportmenu">
+                                        <li>
+                                            <a href="bucustomerreport.aspx">
+                                                <asp:Label ID="Label10" Text="Customer Report" runat="server"></asp:Label></a></li>
+                                        <li><a href="bustaffreport.aspx">
+                                            <asp:Label ID="Label20" Text="Staff Report" runat="server"></asp:Label></a></li>
+                                        <li><a href="buitemusagereport.aspx">
+                                            <asp:Label ID="Label34" Text="Item Usage Report" runat="server"></asp:Label></a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 text-end">
+                            <ul class="rightmenu" style="padding-top: 13px;">
+                                <li style="position: relative;">
+                                    <a href="landing.aspx" title="Home"><i class="fa-solid fa-home"></i></a>
+                                </li>
+                                <li style="position: relative;">
+                                    <a href="bucartcurrentorder.aspx" title="Order in process">
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        <div class="badge">
+                                            <asp:Label ID="lblProcessOrderCount" runat="server">0</asp:Label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" title="Config Setting" id="configmenu2" runat="server" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="configmenu2">
+                                        <li>
+                                            <a href="manageservicetype.aspx">
+                                                <asp:Label ID="Label3" Text="Service Type" runat="server"></asp:Label></a></li>
+
+                                        <li>
+                                            <a href="manageproductcategorytype.aspx">
+                                                <asp:Label ID="Label5" Text="Product Category" runat="server"></asp:Label></a></li>
+
+                                        <li>
+                                            <a href="manageproductbrandtype.aspx">
+                                                <asp:Label ID="Label6" Text="Product Brand" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="managestaffdepartment.aspx">
+                                                <asp:Label ID="lblStaffDept" Text="<%$Resources:Resource, StaffDepartment%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="managestaffjobrole.aspx">
+                                                <asp:Label ID="lblStaffJobRole" Text="<%$Resources:Resource, StaffJobRole%>" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="buprofile.aspx">
+                                            <asp:Label ID="Label7" Text="Business Profile" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="stafflist.aspx">
+                                            <asp:Label ID="Label12" Text="Staff" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="shiftlist.aspx">
+                                            <asp:Label ID="lblShift" Text="Shift" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bucontactlist.aspx">
+                                            <asp:Label ID="Label11" Text="<%$Resources:Resource, Contacts %>" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bumanageprofession.aspx">
+                                            <asp:Label ID="Label17" Text="Contact Categories" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bucertificatetypelist.aspx">
+                                            <asp:Label ID="Label15" Text="Certificate Type" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bucustomfields.aspx">
+                                            <asp:Label ID="Label16" Text="Manage Other Fields" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bumanagetax.aspx">
+                                            <asp:Label ID="Label18" Text="Manage Tax" runat="server"></asp:Label></a></li>
+
+                                        <li><a href="bumanagecurrency.aspx">
+                                            <asp:Label ID="Label19" Text="Currency" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="ticketdashboard.aspx" title="Ticket Details"><i class="fa-solid fa-ticket"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" id="settingmenu" data-bs-toggle="dropdown" aria-expanded="false" title="User Details">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="settingmenu">
+                                        <li>
+                                            <a href="profile.aspx">
+                                                <asp:Label ID="Label13" Text="<%$Resources:Resource, MyProfile%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="transferlist.aspx">
+                                                <asp:Label ID="Label14" Text="<%$Resources:Resource, TransferRequests%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click">
+                                                <asp:Label ID="Label29" Text="<%$Resources:Resource, Logout%>" runat="server"></asp:Label>
+                                            </asp:LinkButton></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="page-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script> 
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $(".leftmenu").toggle();
+            return false;
+        });
+    </script>
+</body>
+</html>

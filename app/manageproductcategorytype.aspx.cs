@@ -1,0 +1,47 @@
+﻿using BABusiness;
+using System;
+using System.Collections.Specialized;
+using System.Data;
+
+namespace Breederapp
+{
+    public partial class manageproductcategorytype : ERPBase
+    {
+        override protected void Page_Load(object sender, EventArgs e)
+        {
+            base.Page_Load(sender, e);
+            if (!this.IsPostBack)
+            {
+            }
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            this.lblError.Text = "";
+
+            NameValueCollection collection = new NameValueCollection();
+            collection.Add("name", this.txtName.Text.Trim());
+            collection.Add("companyid", this.CompanyId);
+
+            bool success = false;
+            if (this.hdfilter.Value.Length == 0)
+            {
+                int id = BUProduct.AddProductCategory(collection);
+                success = (id > 0);
+            }
+            else
+            {
+                success = BUProduct.UpdateProductCategory(collection, this.hdfilter.Value);
+            }
+
+            if (success)
+            {
+                Response.Redirect("manageproductcategorytype.aspx");
+            }
+            else
+            {
+                this.lblError.Text = Resources.Resource.error;
+            }
+        }
+    }
+}

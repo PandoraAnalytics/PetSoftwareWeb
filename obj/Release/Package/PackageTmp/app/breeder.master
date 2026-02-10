@@ -1,0 +1,320 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="breeder.master.cs" Inherits="Breederapp.breeder" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/website/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/blogo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css?1" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+        .form_input {
+            width: 65%;
+        }
+
+        .ui-helper-hidden-accessible {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .ui-widget {
+            border-radius: 5px;
+            background: #efefef;
+            font-size: 13px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .rightmenu .dropdown-toggle::after {
+            display: none !important;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="my_form" runat="server">
+        <div>
+            <header>
+                <div id="header-content">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-6">
+                            <span class="d-lg-none d-md-none d-sm-none" id="menu-toggle">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            <ul class="leftmenu">
+                                <li><a href="landing.aspx">
+                                    <img src="images/logo.png" alt="LOGO" style="max-height: 45px;" /></a></li>
+                                <li><a href="landing.aspx">
+                                    <asp:Label ID="Label2" Text="<%$Resources:Resource, Dashboard%> " runat="server"></asp:Label></a> </li>
+                                <li><a href="allappointmentlist.aspx">
+                                    <asp:Label ID="Label3" Text="<%$Resources:Resource, Calendar%>" runat="server"></asp:Label></a> </li>
+                                <li><a href="contactlist.aspx">
+                                    <asp:Label ID="Label31" Text="<%$Resources:Resource, Contacts %>" runat="server"></asp:Label></a></li>
+                                <li><a href="upcomingevents.aspx">
+                                    <asp:Label ID="Label4" Text="<%$Resources:Resource, Events%>" runat="server"></asp:Label></a></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" id="checklistmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <asp:Label ID="Label18" Text="<%$Resources:Resource, Checklist%>" runat="server"></asp:Label>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="checklistmenu">
+                                        <li>
+                                            <a href="checklist.aspx">
+                                                <asp:Label ID="Label32" Text="<%$Resources:Resource, Checklist%>" runat="server"></asp:Label></a></li>
+                                        <li><a href="assignedchecklist.aspx">
+                                            <asp:Label ID="Label33" Text="<%$Resources:Resource, AssignedChecklist%>" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+
+                                <asp:Panel ID="panelConfig" runat="server" Visible="false" Style="display: none;">
+                                    <%--<li>
+                                        <a href="javascript:void(0);" class="dropdown-toggle" id="configmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <asp:Label ID="Label5" Text="<%$Resources:Resource, Config%>" runat="server"></asp:Label>
+                                        </a>
+                                        <ul class="dropdown-menu profile_menu" aria-labelledby="configmenu">
+                                            <li>
+                                                <a href="managebreeds.aspx">
+                                                    <asp:Label ID="Label6" Text="<%$Resources:Resource, ManageAnimalCategory%>" runat="server"></asp:Label></a></li>
+                                            <li><a href="managebreedstype.aspx">
+                                                <asp:Label ID="Label20" Text="<%$Resources:Resource, ManageTypeofBreeds%>" runat="server"></asp:Label></a></li>
+                                            <li><a href="manageprofession.aspx">
+                                                <asp:Label ID="Label21" Text="<%$Resources:Resource, ManageContactCategories%>" runat="server"></asp:Label></a></li>
+                                            <li>
+                                                <a href="reportallanimals.aspx">
+                                                    <asp:Label ID="Label1" Text="<%$Resources:Resource, AllAnimalReport%>" runat="server"></asp:Label></a></li>
+                                            <li>
+                                                <a href="animallog.aspx">
+                                                    <asp:Label ID="Label22" Text="<%$Resources:Resource, ManageAnimalLog%>" runat="server"></asp:Label></a></li>
+                                            <li>
+                                                <a href="userreport.aspx">
+                                                    <asp:Label ID="Label34" Text="<%$Resources:Resource, Userreport %>" runat="server"></asp:Label></a></li>
+                                        </ul>
+                                    </li>--%>
+                                </asp:Panel>
+                                <asp:Panel ID="panelAssociation" runat="server" Visible="false" Style="display: inline-block;">
+                                    <li>
+                                        <a href="javascript:void(0);" class="dropdown-toggle" id="associationmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <asp:Label ID="Label23" Text="<%$Resources:Resource, Association%>" runat="server"></asp:Label>
+                                        </a>
+                                        <ul class="dropdown-menu profile_menu" aria-labelledby="associationmenu">
+                                            <li><a href="eventslist.aspx">
+                                                <asp:Label ID="Label24" Text="<%$Resources:Resource, ManageEvents%>" runat="server"></asp:Label></a></li>
+                                            <li><a href="customfields.aspx">
+                                                <asp:Label ID="Label25" Text="<%$Resources:Resource, ManageOtherFields%>" runat="server"></asp:Label></a></li>
+                                            <li><a href="certificatetypelist.aspx">
+                                                <asp:Label ID="Label26" Text="<%$Resources:Resource, ManageCertificateType%>" runat="server"></asp:Label></a>
+                                            </li>
+                                            <li><a href="managecertificateapproval.aspx">
+                                                <asp:Label ID="Label27" Text="<%$Resources:Resource, ManageCertificateApproval%>" runat="server"></asp:Label></a>
+                                            </li>
+                                            <li><a href="manageassociationapproval.aspx">
+                                                <asp:Label ID="Label1" Text="<%$Resources:Resource, ManageAssociationApproval%>" runat="server"></asp:Label></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </asp:Panel>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-6 text-end">
+                            <ul class="rightmenu" style="padding-top: 13px;">
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" title="Config Setting" id="configmenu2" runat="server" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="configmenu2">
+                                        <li>
+                                            <a href="managebreeds.aspx">
+                                                <asp:Label ID="Label28" Text="<%$Resources:Resource, ManageAnimalCategory%>" runat="server"></asp:Label></a></li>
+                                        <li><a href="managebreedstype.aspx">
+                                            <asp:Label ID="Label29" Text="<%$Resources:Resource, ManageTypeofBreeds%>" runat="server"></asp:Label></a></li>
+                                        <li><a href="managetypeclass.aspx">
+                                            <asp:Label ID="Label30" Text="Manage Pet Type Class" runat="server"></asp:Label></a></li>
+                                        <li><a href="manageprofession.aspx">
+                                            <asp:Label ID="Label36" Text="<%$Resources:Resource, ManageContactCategories%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="reportallanimals.aspx">
+                                                <asp:Label ID="Label37" Text="<%$Resources:Resource, AllAnimalReport%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="animallog.aspx">
+                                                <asp:Label ID="Label38" Text="<%$Resources:Resource, ManageAnimalLog%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="userreport.aspx">
+                                                <asp:Label ID="Label39" Text="<%$Resources:Resource, Userreport %>" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+                                <%-- <li>
+                                    <a href="javascript:void(0);"><i class="fa-solid fa-bell"></i></a>
+                                </li>--%>
+                                <li>
+                                    <a href="ticketlist.aspx" title="Ticket Details"><i class="fa-solid fa-ticket"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="dropdown-toggle" id="settingmenu" data-bs-toggle="dropdown" aria-expanded="false" title="User Details">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                    <ul class="dropdown-menu profile_menu" aria-labelledby="settingmenu">
+                                        <li>
+                                            <a href="profile.aspx">
+                                                <asp:Label ID="Label40" Text="<%$Resources:Resource, MyProfile%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <a href="transferlist.aspx">
+                                                <asp:Label ID="Label41" Text="<%$Resources:Resource, TransferRequests%>" runat="server"></asp:Label></a></li>
+                                        <li>
+                                            <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click">
+                                                <asp:Label ID="Label42" Text="<%$Resources:Resource, Logout%>" runat="server"></asp:Label>
+                                            </asp:LinkButton></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="page-content">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                        <div class="sidebarmenu">
+                            <h3>
+                                <asp:Label ID="Label7" Text="<%$Resources:Resource, AnimalDetails %>" runat="server"></asp:Label></h3>
+                            <a href="basicdetails.aspx" id="lnkbasicinfo" runat="server">
+                                <i class="fa-solid fa-circle-info"></i>
+                                &nbsp;
+                                <asp:Label ID="Label8" Text="<%$Resources:Resource, BasicInfo %>" runat="server"></asp:Label></a>
+
+                            <a href="breederinfo.aspx" id="lnkbreederinfo" runat="server">
+                                <i class="fa-solid fa-shield-dog"></i>
+                                &nbsp;
+                                <asp:Label ID="Label35" Text="<%$Resources:Resource, Breederinfo %>" runat="server"></asp:Label></a>
+
+                            <a href="parentinfo.aspx" id="lnkparentinfo" runat="server">
+                                <i class="fa-solid fa-paw"></i>
+                                &nbsp;
+                                <asp:Label ID="Label9" Text="<%$Resources:Resource, Parents %>" runat="server"></asp:Label></a>
+                            <a href="otherdetails.aspx" id="lnkotherinfo" runat="server">
+                                <i class="fa-solid fa-file"></i>
+                                &nbsp;
+                                <asp:Label ID="Label10" Text="<%$Resources:Resource, OtherInfo %>" runat="server"></asp:Label></a>
+                            <a href="gallery.aspx" id="lnkgallery" runat="server">
+                                <i class="fa-solid fa-image"></i>
+                                &nbsp;
+                                <asp:Label ID="Label11" Text="<%$Resources:Resource, Gallery %>" runat="server"></asp:Label></a>
+                            <a href="appointmentlist.aspx" id="lnkappointment" runat="server">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                &nbsp;
+                                <asp:Label ID="Label12" Text="<%$Resources:Resource, Appointments %>" runat="server"></asp:Label></a>
+                            <a href="noteslist.aspx" id="lnknotes" runat="server">
+                                <i class="fa-solid fa-notes-medical"></i>
+                                &nbsp;
+                                <asp:Label ID="Label13" Text="<%$Resources:Resource, Notes %>" runat="server"></asp:Label></a>
+                            <a href="foodlist.aspx" id="lnkfood" runat="server">
+                                <i class="fa-solid fa-carrot"></i>
+                                &nbsp;
+                                <asp:Label ID="Label14" Text="<%$Resources:Resource, Food %>" runat="server"></asp:Label></a>
+                            <a href="certificateslist.aspx" id="lnkcertificates" runat="server">
+                                <i class="fa-solid fa-file"></i>
+                                &nbsp;
+                                <asp:Label ID="Label16" Text="<%$Resources:Resource, Certificates %>" runat="server"></asp:Label></a>
+                            <a href="animalchecklist.aspx" id="lnkmychecklist" runat="server">
+                                <i class="fa-solid fa-list-check"></i>
+                                &nbsp;
+                                <asp:Label ID="Label15" Text="<%$Resources:Resource, MyChecklist %>" runat="server"></asp:Label></a>
+
+                            <a href="animaltransfer.aspx" id="lnktransfer" runat="server">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                &nbsp;
+                                <asp:Label ID="Label17" Text="<%$Resources:Resource, Transfer %>" runat="server"></asp:Label></a>
+
+                            <a href="pedigreereport.aspx" id="lnkAnimalPedigree" runat="server">
+                                <i class="fa-solid fa-people-roof"></i>
+                                &nbsp;
+                                <asp:Label ID="Label155" Text="<%$Resources:Resource, Pedigree %>" runat="server"></asp:Label></a>
+
+                            <a href="animaldeactivate.aspx" id="lnkdelete" runat="server">
+                                <i class="fa-solid fa-ban"></i>
+                                &nbsp;
+                                <asp:Label ID="Label19" Text="<%$Resources:Resource, Deactivate %>" runat="server"></asp:Label></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                        <div id="breed_header">
+                            <table width="100%">
+                                <tr>
+                                    <td width="5%">
+                                        <img src="app/images/breed-horse-selected.png" id="profileimg" runat="server" alt="Pet Profile PIC" class="profilepic" /></td>
+                                    <td width="25%">
+                                        <div class="name">
+                                            <h4>
+                                                <asp:Label ID="lblName" Text="-" runat="server"></asp:Label>
+                                            </h4>
+                                            <div>
+                                                <asp:Label ID="lblType" Text="-" runat="server"></asp:Label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="70%">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input id="searchbox" type="text" placeholder="<%$Resources:Resource, SearchYourAnimal %>" runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br />
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min1.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var getData = function (request, response) {
+                $.getJSON(
+                    "search_breed.ashx?q=" + request.term,
+                    function (data) {
+                        response(data);
+                    });
+            };
+
+            var selectItem = function (event, ui) {
+                alert(1);
+                $("#searchbox").val(ui.item.value);
+                __doPostBack('breedsearch', ui.item.value);
+            }
+
+            $("#searchbox").autocomplete({
+                source: getData,
+                select: selectItem,
+                minLength: 3
+            });
+        });
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $(".leftmenu").toggle();
+            return false;
+        });
+    </script>
+</body>
+</html>

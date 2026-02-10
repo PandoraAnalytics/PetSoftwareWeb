@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Invoice Details</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; letter-spacing: 1.2px;">
+
+    <table cellpadding="0" cellspacing="0" width="90%" align="center" style="padding: 15px; margin: 0 auto; line-height: 20px; font-size: 13px; border: 1px solid #ccc">
+
+        <tr>
+            <td width="60%" style="vertical-align: top;">
+                <img src="#complogo" alt="Logo" style="width: 30%; float: left;" />
+            </td>
+
+            <td width="40%" style="">
+                <p style="margin-bottom: 10px;">
+                    <strong style="font-size: 17px;">#companyname</strong>
+                    <br />
+                    #add1
+                    <br />
+                    <!--#add2
+                    <br />-->
+                </p>
+
+                <p style="margin-bottom: 25px;">
+                    <span style="width: 25%; display: inline-block; margin-right: 5px;">Phone.:</span>#contactno
+                    <br />
+                    <span style="width: 25%; display: inline-block; margin-right: 5px;">Email: </span>#email
+                    <br />
+                    <span style="width: 25%; display: inline-block; margin-right: 5px;">Web: </span>#website
+
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="vertical-align: top">
+                <p style="font-size: 13px; margin-top: 20px; line-height: 27px;">
+                    <strong>#customername </strong>
+                    <br />
+                    #customeremail
+                    <br />
+                    #customercontactno
+                    <br />
+                    #billto_address
+                    <br />
+                    --
+                </p>
+
+            </td>
+            <td style="">
+                <div style="background: #f2f2f2; padding: 5px 10px;">
+
+                    <h3 style="margin: 10px 0 20px 0; font-size: 24px;">Invoice</h3>
+
+                    <span style="color: #9c0505; font-weight: 600;"><span style="margin-right: 10px;">No. : </span>#invnumber</span>
+                    <br />
+
+                    <span style="margin-right: 10px;">Invoice date: </span>#todaydate
+                    <br />
+
+                    <span style="margin-right: 10px;">Due date: </span>#duedate
+                    <br />
+
+
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan='2' style="padding: 10px 0 15px 0; font-size: 13px;">
+                Dear #customername,<br />
+                <br />
+
+                This is your invoice. We thank you for your business.
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="left" style="font-size: 13px;">
+                <table cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+                    <thead>
+                        <tr>
+                            <th width="30%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Item</th>
+                            <th width="10%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Quantity</th>
+                            <th width="15%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Unit Cost</th>
+                            <th width="15%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Unit Tax</th>
+                            <th width="15%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Unit Price (with Tax) </th>
+                            <th width="15%" style="font-weight: 500; border: 1px solid #ccc; padding: 5px;">Amount </th>
+                        </tr>
+                    </thead>
+
+                    <tbody style="height: 200px;">
+                        ####orderdetailsfields###
+                    </tbody>
+                </table>
+                <br />
+                <br />
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="right" style="font-size: 13px;">
+                <!--#submodulecontent-->
+                <table cellspacing="0" cellpadding="0" style="width: 50%; border-collapse: collapse; border: 1px solid #ccc;">
+                    <tr>
+                        <td width="30%">Sub Total</td>
+                        <td width="20%">#subtotal</td>
+                    </tr>
+                    <tr>
+                        <td width="30%">Total Tax</td>
+                        <td width="20%">#totaltax</td>
+                    </tr>
+                    ####headdetails###
+                    <tr>
+                        <td width="30%"><b>Total</b></td>
+                        <td width="20%"><b>#total</b></td>
+                    </tr>
+                </table>
+                <br /><br />
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="">
+                <p style="margin: 0;">
+                    <span style="margin-right: 20px;">Payment terms & condition:</span>	#termscondition
+                </p>
+
+                <p>
+                    This form was created automatically and does not require a signature.
+                    <br />
+                    Our General Terms & Conditions apply.
+                </p>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="padding-top: 50px; font-size: 13px">
+                <table width="100%">
+                    <tr>
+                        <td width="20%">
+                            <div style="background: #f2f2f2; padding: 5px 10px 20px 10px;">
+                                <span style="font-size: 13px;">#companyname</span>
+                                <br />
+                                <br />
+                                <span style="font-size: 13px;">#add1</span>
+                                <!--<br />-->
+                                <!--<span style="font-size: 13px;">#add2</span>-->
+                                <!--<br />-->
+                                <span style="font-size: 13px;">#contactno</span>
+                                <br />
+                                <br />
+                            </div>
+                        </td>
+
+                        <td width="45%">
+                            <div style="background: #f2f2f2; padding: 5px 10px 20px 10px;">
+                                <span style="font-size: 13px;">Bank account</span>
+                                <br />
+                                <br />
+                                <span style="font-size: 13px;">Account No: 019957900</span>
+                                <br />
+                                <span style="font-size: 13px;">IBAN DE06573918000019957900</span>
+                                <br />
+                                <span style="font-size: 13px;">Sort Code    573 918 00	BIC / SWIFT:    GENODE51WW1</span>
+                            </div>
+                        </td>
+
+                        <td width="35%">
+                            <div style="background: #f2f2f2; padding: 5px 10px 20px 10px;">
+                                #owner_name
+                                <br />
+                                <br />
+                                VAT. Id.-Nr.  : #owner_vatinNo
+                                <br />
+                                Registry Number: #owner_registryno
+                                <br />
+                                Court of Registration: Montabaur, Germany
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\obj\Debug\BABusiness.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\obj\Debug\BABusiness.csproj.CoreCompileInputs.cache

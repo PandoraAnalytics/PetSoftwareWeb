@@ -1,0 +1,627 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: #303030;
+    overflow-x: hidden;
+    letter-spacing: 0.5px;
+    /* background: #fff url("../images/body_bg.jpg") repeat center top;  font-family: 'Nunito Sans', sans-serif; */
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+    button, button:focus {
+        outline: none;
+    }
+
+a:focus, a:hover {
+    color: #007cc3;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Exo', sans-serif; */
+}
+
+.top_to_page {
+    position: fixed;
+    bottom: 5%;
+    right: 40px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.dropdown-item {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
+.globestyle {
+    color: #DB6516;
+}
+
+
+/* ================================== section title /subtitle =============================== */
+
+.page-title,
+.sec_title {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec_subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.orange {
+    color: #DB6516;
+}
+/* #ed6436 */
+
+.green {
+    color: #6ba149;
+}
+
+a.orange:hover, a.orange:focus {
+    color: #bf5610;
+}
+
+.more_btn {
+    display: block;
+}
+
+    .more_btn i {
+        font-size: 42px;
+    }
+
+.bg_gray {
+    background: #f5f9fa;
+}
+
+.bg_white {
+    background: #fff;
+}
+
+
+.cust_btn {
+    background: #DB6516;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+    .cust_btn:hover {
+        background: #bf5610;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+/* ================================== Header =============================== */
+
+header {
+    position: relative;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1024;
+    top: 0;
+}
+
+.navbar {
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.navbar-brand img {
+    max-height: 75px;
+    position: absolute;
+    top: 5px;
+}
+
+.navbar-toggler {
+    border-color: #8c288b;
+}
+
+.navbar-toggler-icon span {
+    background: #8c288b none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin-top: 6px;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
+
+    .navbar-nav .nav-item {
+        position: relative;
+        padding: 0 15px;
+    }
+
+        .navbar-nav .nav-item:last-child {
+            padding-right: 0;
+        }
+
+.nav-item a {
+    color: #303030;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+    .nav-item a:hover,
+    .nav-item.active a {
+        color: #DB6516;
+    }
+
+.nav-item .cust_btn {
+    color: #fff!important;
+    min-width: 95px;
+    text-align: center;
+    padding: 4px 4px;
+}
+
+/* ================================== inner banner =============================== */
+
+.inner_banner {
+    background: #f7f8f9;
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* ================================== footer =============================== */
+
+
+footer {
+    font-size: 15px;
+    position: relative;
+    background: #042e4a;
+    color: #fff;
+}
+
+    footer .widget {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    footer h4 {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    footer ul li {
+        margin-top: 15px;
+    }
+
+    footer a,
+    footer a:hover,
+    footer a:focus {
+        color: #fff;
+    }
+
+    footer .logo {
+        width: 120px;
+    }
+
+.social_icons {
+    margin-top: 15px;
+}
+
+    .social_icons a {
+        margin: 5px;
+        border: 2px solid #DB6516;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        line-height: 32px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+        .social_icons a:hover {
+            color: #fff;
+            border: 2px solid #DB6516;
+            transition: 0.5s all ease;
+            background: #DB6516;
+        }
+
+.copyright {
+    padding: 2% 0;
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+
+/* ================================== Home page  =============================== */
+
+/* ---------- sec_banner ---------- */
+.sec_banner {
+    position: relative;
+    /* height: 80vh; */
+    margin-top: 88px!important;
+}
+
+    .sec_banner .carousel-item {
+        max-height: 600px;
+    }
+
+        .sec_banner .carousel-item img {
+            object-fit: fill;
+        }
+
+    .sec_banner .carousel-caption h5 {
+    }
+
+    .sec_banner .carousel-caption p {
+    }
+
+/* ---------- 1. sec_services ---------- */
+
+.sec_services {
+    position: relative;
+}
+
+    .sec_services .ser-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .sec_services .sub_title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .sec_services .super_title {
+        font-size: 21px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+        line-height: 1.4em;
+    }
+
+    .sec_services .cust_btn img {
+        width: 40px;
+    }
+
+/* ---------- 2. sec_about ---------- */
+
+.sec_about {
+    position: relative;
+    /* min-height: 600px;  */
+}
+
+.service_list {
+    margin-top: 30px;
+}
+
+    .service_list li {
+        margin-bottom: 30px;
+        padding-left: 25px;
+        position: relative;
+    }
+
+        .service_list li i {
+            font-size: 12px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        .service_list li h6 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+/* ---------- 3. sec_blog ---------- */
+
+.sec_blog {
+    position: relative;
+}
+
+    .sec_blog .sub_title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #e66952;
+        margin-bottom: 15px;
+    }
+
+    .sec_blog .super_title {
+        font-size: 21px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+        line-height: 1.4em;
+    }
+
+    .sec_blog .blog-item {
+        background: #fff;
+        padding: 15px;
+    }
+
+    .sec_blog .cust_btn img {
+        width: 40px;
+    }
+
+/* -------------------- Media Queries (Home page )-------------------- */
+
+@media screen and (max-width: 1024px) {
+    /* --- Home page --- */
+    .sec_careers {
+        min-height: 415px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* --- Home page --- */
+    .sec_careers {
+        min-height: 320px;
+    }
+
+    .navbar-nav {
+        margin-top: 60px;
+        border-top: 1px solid #db6516;
+    }
+
+    button.navbar-toggler {
+    margin-top: 20px;
+}
+}
+
+
+/* ================================== Services page =============================== */
+
+.sec_services .item {
+    padding: 15px;
+}
+
+.sec_choose_us {
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+
+
+/* ================================== About page   ================================== */
+
+
+/* ---- 1.sec_intro ---- */
+
+.sec_intro {
+    position: relative;
+}
+
+/* ---------- 2. sec_product (What we do) --------- */
+
+.sec_product {
+    position: relative;
+}
+
+    .sec_product .ser_wrp {
+        background: #fff;
+        padding: 20px;
+        margin-bottom;
+    }
+
+        .sec_product .ser_wrp img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+/* ---------- 3. Testimonials ---------- */
+
+.sec_suc_stories {
+    background: #fff;
+}
+
+.testimonial_slider .carousel-indicators {
+    bottom: 0px;
+}
+
+    .testimonial_slider .carousel-indicators li {
+        background-color: #DB6516;
+    }
+
+.testimonial_slider .carousel-item {
+    min-height: 200px;
+}
+
+.testimonial_slider .card-caption {
+    padding: 0px 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+    .testimonial_slider .card-caption .quote_icon {
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    .testimonial_slider .card-caption h6 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+.testimonial_slider .carousel-control-next,
+.testimonial_slider .carousel-control-prev {
+    top: 24%;
+    bottom: auto;
+    opacity: 1;
+    width: auto;
+    font-size: 48px;
+}
+
+    .testimonial_slider .carousel-control-next:hover,
+    .testimonial_slider .carousel-control-next:focus,
+    .testimonial_slider .carousel-control-prev:hover,
+    .testimonial_slider .carousel-control-prev:focus {
+        color: #e66952;
+        opacity: 1;
+    }
+
+/* ================================== Contact page   ================================== */
+
+/* ---- contact form --- */
+
+.sec_form {
+    position: relative;
+}
+
+.contact_form_wrapper {
+    padding: 5%;
+    background: #fff;
+}
+
+    .contact_form_wrapper .form_input {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .contact_form_wrapper .input {
+        padding: 10px 0px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #7E7E7E;
+        resize: none;
+        font-size: 16px;
+        background: transparent;
+    }
+
+.validate_msg {
+    color: #F16C51;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    left: 0px;
+    margin: 0 auto;
+    padding: 4px;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+}
+
+.contact_form_wrapper input:focus,
+.contact_form_wrapper textarea:focus {
+    outline: none;
+}
+
+.effect-2 ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #23527c;
+    transition: 0.4s;
+}
+
+.effect-2:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.form_btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 40px;
+    display: block;
+    text-transform: uppercase;
+    background: #DB6516;
+    margin-top: 10px;
+}
+
+.contact_info {
+}
+
+.site_address {
+    font-weight: normal;
+}
+
+    .site_address .location {
+    }
+
+
+        .site_address .location:before,
+        .site_address .site_contact:before,
+        .site_address .site_mail:before {
+            font-family: FontAwesome;
+            font-size: 24px;
+            margin: 0 10px 0 0;
+            color: #DB6516;
+            vertical-align: middle;
+        }
+
+        .site_address .location:before {
+            content: "\f041";
+        }
+
+    .site_address .site_contact:before {
+        /* content:"\f10b"; */
+        content: "\f095";
+    }
+
+    .site_address .site_mail:before {
+        content: "\f003";
+    }
+
+.contact_info .social_icons a {
+    background: transparent;
+}
+
+/* ================================== Media queries =============================== */
+
+@media (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+
+@media screen and (max-width: 480px) {
+}

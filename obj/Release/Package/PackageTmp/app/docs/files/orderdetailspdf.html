@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            font-family: arial;
+            font-size: 15px;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            vertical-align: top;
+        }
+
+            table tr td {
+                border: solid 1px grey;
+                padding: 3px;
+                vertical-align: top;
+                line-height: 20px;
+            }
+
+        .innertable tr td {
+            border: none;
+            vertical-align: top;
+        }
+
+        .strong {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .bigitem {
+            min-height: 80px;
+        }
+
+        .box {
+            width: 12px;
+            height: 12px;
+            border: solid 1px #000;
+            margin: 0 10px 0 20px;
+            background-color: #add8e6;
+            display: inline-block;
+        }
+
+        input[type=checkbox] {
+            font-size: 16px;
+        }
+
+            input[type=checkbox]:after {
+                content: " ";
+                background-color: #add8e6;
+                display: inline-block;
+                visibility: visible;
+                width: 14px;
+                height: 14px;
+                border: solid 1px #000;
+            }
+
+            input[type=checkbox]:checked:after {
+                content: "\2714";
+                background-color: #add8e6;
+                width: 14px;
+                height: 14px;
+                border: solid 1px #000;
+            }
+
+        .incident_img {
+            max-width: 100%;
+            margin: auto;
+            max-height: 250px !important;
+        }
+
+        .persondiv {
+            margin-bottom: 10px;
+        }
+
+        .secondtext {
+            color: #a7a7a7;
+        }
+
+        .break {
+            page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td width="100%" align="center" valign="bottom" style="border: none; vertical-align: middle;">
+                <h1>Order Invoice</h1>
+            </td>          
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <table width="100%">
+        <tr>
+            <td width="60%" align="left" valign="bottom" style="border: none; vertical-align: middle;">
+                <h1>Order Details</h1>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table width="100%" valign="top">
+        <tr>
+            <td width="30%"><b>Customer Details</b></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td width="25%">Order No:</td>
+            <td width="25%">#orderno</td>
+            <td width="25%">Customer Name:</td>
+            <td width="25%">#customername</td>
+        </tr>
+        <tr>
+            <td width="25%">Status:</td>
+            <td width="25%">#status</td>
+            <td width="25%">Order Date:</td>
+            <td width="25%">#orderdate</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table width="100%" valign="top">
+        <tr>
+            <td width="30%"><b>Cart Details</b></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td width="30%" class="strong">Product</td>
+            <td width="10%" class="strong">Quantity</td>
+            <td width="15%" class="strong">Cost</td>
+            <td width="15%" class="strong">Tax</td>
+            <td width="15%" class="strong">Unit Price (with Tax)</td>
+            <td width="15%" class="strong">Amount</td>
+        </tr>
+        ####orderdetailsfields###
+    </table>
+    <br />
+    <table width="50%" valign="top">
+        <tr>
+            <td width="30%">Sub Total</td>
+            <td width="20%">#subtotal</td>
+        </tr>
+        <tr>
+            <td width="30%">Total Tax</td>
+            <td width="20%">#totaltax</td>
+        </tr>
+        ####headdetails###
+        <tr>
+            <td width="30%"><b>Total</b></td>
+            <td width="20%">#total</td>
+        </tr>
+    </table>
+    <br />
+    <table width="100%" valign="top">
+        <tr>
+            <td width="30%"><b>Payment Details</b></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td width="25%">Payment Option:</td>
+            <td width="25%">#paymentoption</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td width="25%">Terms and Conditions:</td>
+            <td width="75%" colspan="3">#terms</td>
+        </tr>
+    </table>
+    <br />   
+</body>
+</html>

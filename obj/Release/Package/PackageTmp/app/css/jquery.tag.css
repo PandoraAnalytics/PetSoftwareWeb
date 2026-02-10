@@ -1,0 +1,308 @@
+.jTagArea {
+}
+
+.jTagContainer {
+    width: 100% !important;
+}
+
+
+.jTagOverlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.jTagDrag {
+    width: 30px;
+    height: 30px;
+    cursor: move;
+}
+
+.jTagInput {
+    margin-right: 0;
+}
+
+.jTagSave {
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    padding: 4px;
+}
+
+.jTagSaveClose {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    color: #d64651;
+}
+
+.jTagDeleteTag {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    background: #d64651;
+    color: #fff;
+}
+
+select#ddl_jtag {
+    width: 100%;
+    height: 25px;
+    padding: 3px 8px;
+}
+
+.jtag_locations {
+    display: none;
+    position: absolute;
+    width: 300px;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 4px;
+    border-radius: 4px;
+    height: 200px;
+    overflow: auto;
+    background-color: #fff;
+    cursor: default;
+}
+
+.jTagSaveBtn {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+}
+
+.jTagPngOverlay {
+    background: url(../images/tagImg/trans.png);
+}
+
+
+.jTagTag {
+    opacity: 0;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+    .jTagTag span {
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        height: 20px;
+        position: absolute;
+        bottom: -20px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+.jTagLabels {
+    text-align: center;
+    padding-top: 20px;
+}
+
+    .jTagLabels label {
+        font-weight: normal;
+        padding: 5px;
+        cursor: pointer;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        margin: 6px;
+    }
+
+
+.jTag_blue {
+    border-color: #2060bb;
+    color: #ffffff;
+    background-color: rgba(32, 96, 187, 0.7);
+}
+
+.jTag_green {
+    border-color: #8fc238;
+    color: #ffffff;
+    background-color: rgba(143, 194, 56, 0.7);
+}
+
+.jTag_cyan {
+    border-color: #00ffff;
+    color: #333;
+    background-color: rgba(0, 255, 255, 0.7);
+}
+
+.jTag_grey {
+    border-color: #b5d0d0;
+    color: #333;
+    background-color: rgba(181, 208, 208, 0.7);
+}
+
+.jTag_indigo {
+    border-color: #4b0082;
+    color: #ffffff;
+    background-color: rgba(75, 0, 130, 0.7);
+}
+
+.jTag_magenta {
+    border-color: #ff00ff;
+    color: #ffffff;
+    background-color: rgba(255, 0, 255, 0.7);
+}
+
+.jTag_maroon {
+    border-color: #800000;
+    color: #ffffff;
+    background-color: rgba(128, 0, 0, 0.7);
+}
+
+.jTag_olive {
+    border-color: #888c1f;
+    color: #ffffff;
+    background-color: rgba(136, 140, 31, 0.7);
+}
+
+.jTag_orange {
+    border-color: #ffa500;
+    color: #333;
+    background-color: rgba(255, 165, 0, 0.7);
+}
+
+.jTag_purple {
+    border-color: #940b94;
+    color: #ffffff;
+    background-color: rgba(148, 11, 148, 0.7);
+}
+
+.jTag_red {
+    border-color: #d4404b;
+    color: #ffffff;
+    background-color: rgba(212, 64, 75, 0.7);
+}
+
+.jTag_royalblue {
+    border-color: #4169e1;
+    color: #ffffff;
+    background-color: rgba(65, 105, 225, 0.7);
+}
+
+.jTag_seagreen {
+    border-color: #2e8b57;
+    color: #ffffff;
+    background-color: rgba(46, 139, 87, 0.7);
+}
+
+.jTag_tan {
+    border-color: #d4b68d;
+    color: #333;
+    background-color: rgba(212, 182, 141, 0.7);
+}
+
+.jTag_yellow {
+    border-color: #ffff00;
+    color: #333;
+    background-color: rgba(255, 255, 0,0.7);
+}
+
+.jTag_yellowgreen {
+    border-color: #9bcf32;
+    color: #ffffff;
+    background-color: rgba(155, 207, 50,0.7);
+}
+
+
+.jTag_white span {
+}
+
+.jTag_blue span {
+    background-color: #2060bb;
+    color: #ffffff;
+}
+
+.jTag_green span {
+    background-color: #8fc238;
+    color: #ffffff;
+}
+
+.jTag_cyan span {
+    background-color: #00ffff;
+    color: #333;
+}
+
+.jTag_grey span {
+    background-color: #b5d0d0;
+    color: #333;
+}
+
+.jTag_indigo span {
+    background-color: #4b0082;
+    color: #ffffff;
+}
+
+.jTag_magenta span {
+    background-color: #ff00ff;
+    color: #ffffff;
+}
+
+.jTag_maroon span {
+    background-color: #800000;
+    color: #ffffff;
+}
+
+.jTag_olive span {
+    background-color: #888c1f;
+    color: #ffffff;
+}
+
+.jTag_orange span {
+    background-color: #ffa500;
+    color: #333;
+}
+
+.jTag_purple span {
+    background-color: #940b94;
+    color: #ffffff;
+}
+
+.jTag_red span {
+    background-color: #d4404b;
+    color: #ffffff;
+}
+
+.jTag_royalblue span {
+    background-color: #4169e1;
+    color: #ffffff;
+}
+
+.jTag_seagreen span {
+    background-color: #2e8b57;
+    color: #ffffff;
+}
+
+.jTag_tan span {
+    background-color: #d4b68d;
+    color: #333;
+}
+
+.jTag_yellow span {
+    background-color: #ffff00;
+    color: #333;
+}
+
+.jTag_yellowgreen span {
+    background-color: #9bcf32;
+    color: #ffffff;
+}

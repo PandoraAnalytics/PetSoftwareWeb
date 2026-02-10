@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\BADBUtils\bin\Release\BADBUtils.dll
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\BADBUtils\bin\Release\BADBUtils.pdb
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\BADBUtils\obj\Release\BADBUtils.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\BADBUtils\obj\Release\BADBUtils.dll
+C:\Users\Administrator\Documents\SumitWork\Pets_live_20Aug\1_1_PetsSoftware_LIVE\BADBUtils\obj\Release\BADBUtils.pdb

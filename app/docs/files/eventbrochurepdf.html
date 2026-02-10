@@ -1,0 +1,140 @@
+﻿<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            font-family: arial;
+            font-size: 12px;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        .written_font {
+            font-family: arial;
+            font-size: 13px;
+        }
+
+        .txt_bold1 {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .maindiv {
+            background-color: #fff;
+            padding: 5px;
+        }
+
+        table {
+            /*border-collapse: collapse;*/
+            vertical-align: top;
+            width: 100%;
+        }
+
+            table tr td {
+                /*border: solid 1px #000;*/
+                padding: 8px 5px;
+                vertical-align: top;
+                font-size: 12px;
+            }
+
+        h1 {
+            font-size: 22px;
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+        }
+
+        .no_border {
+            border-bottom: 2px solid #000;
+        }
+
+            .no_border td {
+                border: none;
+            }
+
+        .border td {
+            /*border: 1px solid #000;*/
+        }
+
+
+        .nesting_table td {
+            border: none;
+            padding: 5px;
+        }
+
+            .nesting_table td .list {
+                padding: 5px 0;
+            }
+
+        .sign {
+            max-width: 130px;
+            height: auto;
+        }
+
+        .page_break {
+            page-break-after: always;
+        }
+
+        div.mycontainer {
+            width: 100%;
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+
+            div.mycontainer div {
+                width: 50%;
+                float: left;
+            }
+
+        .animalheader, .ownerheader {
+            width: 100%;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            padding-top: 10px;
+            text-decoration: underline;
+        }
+
+        .animalbox > div > h4 {
+            text-decoration: underline;
+        }
+
+        .brsponsor {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            font-size: 12px;
+        }
+
+        .silversponsor {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            font-size: 12px;
+        }
+
+        .goldsponsor {
+            position: relative;
+            width: 700px;
+            height: 450px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <table class="border" align="center" style="width:100%; vertical-align:central;">
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    <h1>#brochurename</h1><br /><br />
+                    <div><img src='#brochureimg' style="width:600px; height:400px;" /></div><br /><br /><br />
+                    <h2>#brochuredescription</h2><br />
+                </td>
+            </tr>
+        </table>
+        <div class="page_break"></div>
+        ##content
+    </div>
+</body>
+
+</html>

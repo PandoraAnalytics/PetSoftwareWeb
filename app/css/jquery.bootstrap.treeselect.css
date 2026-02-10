@@ -1,0 +1,12 @@
+.bts_dropdown ul{list-style:none;padding:0}.bts_dropdown ul li{border:none!important;padding-left:30px;margin:0!important}.bts_dropdown ul li label{position:relative;padding:5px 20px;white-space:nowrap;margin:0!important;font-weight:400}.bts_dropdown ul li label input{position:absolute;left:0;top:5px}.bts_dropdown>ul{max-height:289px;overflow:auto;max-width:400px}.bts_dropdown>ul>li{border-top:none;margin-left:0;margin-bottom:0}.bts_dropdown>ul>li:first-child{border-top:0}.handle{display:block;float:left;width:11px;height:11px;position:relative;top:5px;margin:5px}.collapsed{cursor:pointer;margin-top:2px}.collapsed::before{content:"\f067";font:normal normal normal 10px/1 FontAwesome;color:#333}.expanded{cursor:pointer;margin-top:2px}.expanded::before{content:"\f068";font:normal normal normal 10px/1 FontAwesome;color:#333}
+.dummy_checkbox {
+    background-color: #aaa;
+    border: 1px solid #333;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: -20px;
+    line-height: 10px;
+}

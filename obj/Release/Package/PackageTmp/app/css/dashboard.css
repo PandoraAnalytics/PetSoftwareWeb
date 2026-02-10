@@ -1,0 +1,259 @@
+﻿.filter {
+    position: fixed;
+    z-index: 99;
+    height: 70px;
+    background: #f2f4f8;
+    width: 100%;
+    top: 100px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+h3.sec_title {
+    margin-top: 10px;
+}
+
+.main_block {
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    height: 275px;
+    display: table;
+    width: 100%;
+}
+
+.align_center {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.main_block section {
+    padding: 15px;
+}
+
+.main_block .total_block {
+    color: #494a4a;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+    .main_block .total_block section {
+        border-bottom: 1px solid #ccc;
+    }
+
+.main_block .sub_block2 {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.main_block .sub_block3 {
+    border-left: 1px solid #ccc;
+}
+
+.main_block .head {
+    color: #2b4b74;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main_block .block1 .number1 {
+    color: #d64651;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_block .block1 .status {
+    color: #d64651;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_block .block1 .number2 {
+    color: #8fc238;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_block .block1 .status_green {
+    color: #8fc238;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_block .block1 .number3 {
+    color: #f4bd0e;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_block .block1 .status_orange {
+    color: #f4bd0e;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sec_dates, .sec_dates:hover {
+    display: inline-block;
+    padding-bottom: 1px;
+    color: #333;
+    border-bottom: 1px solid #494a4a;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dt_footer {
+    padding: 5px;
+    border: none;
+    background: none;
+}
+
+.pagination > li > a, .pagination > li > a:hover {
+    border-radius: 0;
+    padding: 0px 6px;
+    border: none;
+    margin-right: 10px;
+    color: #333;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover {
+    background: none;
+    color: #333;
+    border-bottom: 1px solid #333;
+    border-color: #333;
+}
+
+.sec_lg_y {
+    min-height: 238px;
+    max-height: 238px;
+    overflow: auto;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.dt_filters, .dt_filters li {
+    margin: 0;
+}
+
+.sub_text {
+    color: #656565;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#ContentPlaceHolder1_ddlComparison {
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.scrolly_table {
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.fixed.freeze {
+    z-index: 10;
+    position: relative;
+    background-color: #eff2f7;
+}
+
+.fixed.freeze_vertical {
+    z-index: 5;
+    position: relative;
+    /*transform: rotate(30deg);
+            border: none;
+            background-color: inherit;
+            top: 3px;
+            left: 2px;
+            padding-bottom: 15px;*/
+    background-color: #eff2f7;
+}
+
+    .fixed.freeze_vertical div {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+.fixed.freeze_horizontal {
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+    background-color: #eff2f7;
+}
+
+#scrolling_table_2 table tr th, #scrolling_table_2 table tr td {
+    border: 1px solid #ddd;
+    border-left: none;
+    padding: 4px;
+}
+
+    #scrolling_table_2 table tr td div {
+        text-align: center;
+    }
+
+.dataviz .slider {
+    display: inline-block;
+}
+
+    .dataviz .slider .left {
+        border: solid 1px #ddd;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 8px 0px 6px 0px;
+        border-radius: 0;
+        font-size: 9px;
+        transform: rotate(180deg);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .dataviz .slider a, .dataviz .slider a:hover {
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .dataviz .slider .right {
+        border: solid 1px #ddd;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 8px 0 6px 3px;
+        border-radius: 5px;
+        font-size: 9px;
+        margin-left: -4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+.dataviz .download {
+    display: inline-block;
+    border: solid 1px #ddd;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    padding: 2px 0px 5px 0px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    margin-right: 6px;
+}
